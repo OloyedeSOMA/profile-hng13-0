@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="icon" href="https://res.cloudinary.com/dgqzwciqu/image/upload/v1760786037/profile_avatar_xzrpfb.jpg">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <article data-testid="test-profile-card" class="profile-card">
+        <div class="image-container">
+            <figure>
+                <img src="https://res.cloudinary.com/dgqzwciqu/image/upload/v1760786037/profile_avatar_xzrpfb.jpg" data-testid="test-user-avatar" alt="Profile Photo of Oloyede Muhammed" class="avatar">
+            
+            </figure>
+        </div>
+        
+        <div class="texts-container">
+            <h2 data-testid="test-user-name">Oloyede S.O.M.A</h2>
+            <p data-testid="test-user-time">Current Time:</p>
+            <p data-testid="test-user-bio">Passionate frontend developer creating responsive, accessible web applications. Specializing in React, TypeScript, and modern CSS. Always learning and exploring new technologies to build better user experiences.</p>
+            
+            
+            <ul class="socials" data-testid="test-user-social-links">
+                <li data-testid="test-user-social-github"><a href="https://github.com/OloyedeSOMA" target="_blank" rel="noopener noreferrer"> GITHUB</a></li>
+                <li data-testid="test-user-social-linkedin"><a href="https://www.linkedin.com/in/muhammed-o-012277329" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
+                
+            </ul>
+
+            <div class="container">
+                <section class="hobbies-section grid-section">
+                    <h5>HOBBIES</h5>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Photography</li>
+                        <li>Eating</li>
+                        <li>Reading tech blogs</li>
+                        <li>Open source contributing</li>
+                    </ul>
+                </section>
+
+                <section class="dislike-section grid-section">
+                    <h5>DISLIKES</h5>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Poor documentation</li>
+                        <li>Unnecessary meetings</li>
+                        <li>Browser inconsistencies</li>
+                        <li>Stress</li>
+                    </ul>
+                </section>
+            </div>
+
+            
+            
+        </div>
+        
+    </article>
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
