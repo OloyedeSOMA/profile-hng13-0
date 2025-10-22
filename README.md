@@ -50,5 +50,3 @@ It includes a **Profile Card page** (Stage 0) and a **Contact Form page** (Stage
 2. **Navigate into the folder**
   cd hng-profile-contact
 3. **Open index.html in your browser**
-
-## 📁 Folder Structure
