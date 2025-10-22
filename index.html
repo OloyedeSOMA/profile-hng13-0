@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
     <link rel="icon" href="https://res.cloudinary.com/dgqzwciqu/image/upload/v1760786037/profile_avatar_xzrpfb.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
-    <article data-testid="test-profile-card" class="profile-card">
+    <header>
+        <nav class="navbar">
+        <h1 class="logo">HNG</h1>
+        <ul class="nav-links">
+            <li><a href="#" class="active"  aria-current="page"><i class="ri-home-4-line"></i> Home</a></li>
+            <li><a href="./pages/contact.html" class="contact-btn"><i class="ri-mail-line"></i> Contact</a></li>
+            <li><a href="./pages/about.html"><i class="ri-user-line"></i> About</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="bigContainer">
+        <article data-testid="test-profile-card" class="profile-card">
         <div class="image-container">
             <figure>
                 <img src="https://res.cloudinary.com/dgqzwciqu/image/upload/v1760786037/profile_avatar_xzrpfb.jpg" data-testid="test-user-avatar" alt="Profile Photo of Oloyede Muhammed" class="avatar">
             
             </figure>
-        </div>
+        </div> 
         
         <div class="texts-container">
             <h2 data-testid="test-user-name">Oloyede S.O.M.A</h2>
@@ -55,6 +68,8 @@
         </div>
         
     </article>
+    </div>
+    
     <script src="./js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | HNG</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="icon" href="https://res.cloudinary.com/dgqzwciqu/image/upload/v1760786037/profile_avatar_xzrpfb.jpg">
+  <link rel="stylesheet" href="../style/global.css">
+  <link rel="stylesheet" href="../style/contact.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <h1 class="logo">HNG</h1>
+        <ul class="nav-links">
+            <li><a href="../index.html"><i class="ri-home-4-line"></i> Home</a></li>
+            <li><a href="#" class="active"  aria-current="page"><i class="ri-mail-line"></i> Contact</a></li>
+            <li><a href="./about.html"><i class="ri-user-line"></i> About</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-card">
+            <h2>Get In Touch</h2>
+            <p class="sub-text">Have a question or want to work together? Drop me a message!</p>
+
+            <form class="contact-form" id="form">
+                <div class="form-group">
+                <label for="name">Full Name <span>*</span></label>
+                <div class="input-wrapper">
+                    <i class="ri-user-line"></i>
+                    <input type="text" id="name" name="name" data-testid="test-contact-name" placeholder="John Doe" aria-describedby="error-name"  required>
+                </div>
+                <p id="error-name" class="error-text" data-testid="test-contact-error-name"></p>
+                </div>
+
+                <div class="form-group">
+                <label for="email">Email Address <span>*</span></label>
+                <div class="input-wrapper">
+                    <i class="ri-mail-line"></i>
+                    <input type="email" id="email" name="email" data-testid="test-contact-email" placeholder="john@example.com" aria-describedby="error-email" required>
+                </div>
+                <p id="error-email" class="error-text" data-testid="test-contact-error-email"></p>
+                </div>
+
+                <div class="form-group">
+                <label for="subject">Subject <span>*</span></label>
+                <div class="input-wrapper">
+                    <i class="ri-chat-1-line"></i>
+                    <input type="text" id="subject" name="subject" data-testid="test-contact-subject" placeholder="Project Inquiry" aria-describedby="error-subject" required>
+                </div>
+                <p id="error-subject" class="error-text" data-testid="test-contact-error-subject"></p>
+                </div>
+
+                <div class="form-group">
+                <label for="message">Message <small>(minimum 10 characters)</small></label>
+                <textarea id="message" name="message" rows="5" data-testid="test-contact-message" placeholder="Tell me about your project or inquiry..." aria-describedby="error-message" required></textarea>
+                <p id="error-message" class="error-text" data-testid="test-contact-error-message"></p>  
+                
+                </div>
+
+                <button type="submit" class="submit-btn" data-testid="test-contact-submit">
+                <i class="ri-send-plane-fill"></i> Send Message
+                </button>
+            </form>
+        </section>
+    </main>
+    <dialog id="successModal" class="success-modal" data-testid="test-contact-success" aria-labelledby="success-title" aria-describedby="success-message">
+        <h2 id="success-title"><i class="ri-check-double-line" aria-hidden="true"> Message Sent!</i></h2>
+        <p id="success-message"> Thanks for reaching out! I'll get back to you soon.</p>
+        <button type="button" class="close-btn" id="close-modal-btn" aria-label="close success message"> Close</button>
+    </dialog>
+  <script src="../js/index.js"></script>
+</body>
+</html>

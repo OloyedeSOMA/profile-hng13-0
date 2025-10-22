@@ -1,15 +1,9 @@
-*{
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
+
+
+.bigContainer{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:0 auto;
-    padding: 5px;
-    min-height: 100vh;
-    background-color: rgba(31, 19, 31, 0.333);
 }
 .profile-card{
     width: 90%;
@@ -21,6 +15,7 @@ body{
     background-color: white;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     border-radius: 10px;
+    
     
 }
 .image-container{
